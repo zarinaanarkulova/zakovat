@@ -1,0 +1,6 @@
+{
+  "name": "Zakovat Intellektual O'yini",
+  "description": "Intellectual game for Gulistan State Pedagogical Institute, featuring media-based questions, team scoring, and 90-second timer.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": []
+}

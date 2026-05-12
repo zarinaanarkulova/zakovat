@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bento-bg: #020617;
+  --color-bento-card: #0f172a;
+  --color-bento-border: #1e293b;
+  --color-bento-accent: #fbbf24;
+  --color-bento-blue: #3b82f6;
+  
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bento-bg text-[#f8fafc];
+  }
+}
+
+.bento-card {
+  @apply bg-bento-card border border-bento-border rounded-xl p-4 flex flex-col transition-all duration-300;
+}
+
+.bento-badge {
+  @apply text-[10px] bg-bento-blue px-2 py-0.5 rounded uppercase font-bold text-white mb-2 w-fit;
+}
+
+.bento-btn {
+  @apply bg-[#334155] text-[#f8fafc] px-3 py-2 rounded-md text-[10px] uppercase tracking-wider transition-all hover:bg-[#475569] active:scale-95;
+}
+
+.bento-btn-accent {
+  @apply bg-bento-accent text-bento-bg font-bold px-4 py-2 rounded-md text-[10px] uppercase tracking-wider transition-all hover:brightness-110 active:scale-95;
+}
